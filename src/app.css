@@ -1,39 +1,48 @@
-body {
-  font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+* {
+	box-sizing: border-box;
 }
 
-a {
-  margin-right: 1rem;
+body {
+	width: 100dvw;
+	height: 100dvh;
+	margin: 0;
+	padding: 0;
+	font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
 }
 
 main {
-  text-align: center;
-  padding: 1em;
-  margin: 0 auto;
+	margin: 0 auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-h1 {
-  color: #335d92;
-  text-transform: uppercase;
-  font-size: 4rem;
-  font-weight: 100;
-  line-height: 1.1;
-  margin: 4rem auto;
-  max-width: 14rem;
+.hiragana-line {
+	display: flex;
+	gap: 20px;
 }
-
-p {
-  max-width: 14rem;
-  margin: 2rem auto;
-  line-height: 1.35;
+.char {
+	font-size: 36px;
 }
-
-@media (min-width: 480px) {
-  h1 {
-    max-width: none;
-  }
-
-  p {
-    max-width: none;
-  }
+.pronunciation {
+	margin: 20px auto;
+	font-size: 40px;
+}
+.buttons {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.button {
+	width: 100px;
+	height: 40px;
+	display: block;
+	border-radius: 10px;
+	border: none;
+	background: #b5a8d5;
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
 }
